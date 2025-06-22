@@ -11,8 +11,10 @@ const app = express();
 
 
 // Middleware
+const allowedOrigins = ['https://full-stack-projects-ebon.vercel.app'];
+
 app.use(cors({
-  origin: ['https://your-frontend.vercel.app'], // <-- Allow your frontend
+  origin: allowedOrigins,
   credentials: true
 }));
 app.use(express.json());
