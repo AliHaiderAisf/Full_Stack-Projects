@@ -11,7 +11,10 @@ const app = express();
 
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ['https://your-frontend.vercel.app'], // <-- Allow your frontend
+  credentials: true
+}));
 app.use(express.json());
 
 
