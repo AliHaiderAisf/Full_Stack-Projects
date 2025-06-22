@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shared input style */
+.input {
+  @apply w-full p-2 mb-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500;
+}
+
+/* Primary action button */
+.btn-primary {
+  @apply w-full py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 disabled:opacity-50;
+}
+
+/* Secondary action button */
+.btn-secondary {
+  @apply w-full py-2 bg-gray-300 text-black font-semibold rounded hover:bg-gray-400;
+}
